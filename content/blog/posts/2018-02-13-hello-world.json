@@ -1,6 +1,7 @@
 {
-  "title": "Welcome to Bael, a free Nuxt / NetlifyCMS powered blog template",
+  "title": "Sounds Aware ",
   "date": "Tuesday February 13th, 2018",
-  "thumbnail": "/images/uploads/bael-big.jpg",
-  "body": "**Bael is a free template that gives you an easy way to start a blog that uses modern technologies like static-site JAMstack architecture, CSS grid layout, responsive design, a serverless function that handles emails newsletter signup with Sendgrid, and fuzzy search — all wrapped up in a brutalist aesthetic.**\n\nBael runs using [Nuxt.js](https://nuxtjs.org), [Vue.js](https://vuejs.org), [Netlify CMS](https://netlifycms.org), and is hosted by [Netlify](https://netlify.com). Bael requires an account with Netlify and Github/Gitlab to deploy. A free Sendgrid account and API key is needed to setup the email newsletter signup.\n\nMade by [jake101](https://jake101.com)"
+  "thumbnail": "",
+  "body": "## A Mobile App for Raising Awareness of Environmental Sound, 2019\n\nSounds Aware is a web application that runs on a smartphone and uses machine learning to detect human-made sound (anthrophony) and masks it with ambient music as a user walks around their environment. Though the model is pre-trained with the author’s local environmental sounds, the user can train the model further on their unique soundscape so that each user gets a personalized experience. After the training process, the user can listen to ambient music based on traits of the surrounding anthrophony. If the app senses less anthrophony and more biophony or geophony, then the music fades away, bringing the user’s attention to the anthrophony.\n\n[App](https://soundsaware.com/) | [Paper]() | [Code] (https://github.com/tatecarson/walking-machine-listening)",
+  "category": "Distributed Smartphone Spearer Array"
 }
