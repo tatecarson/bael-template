@@ -1,15 +1,9 @@
 {
-  "sitename": "Bael",
-  "sitedescription": "A fashionable brutalist blog template using Netlify CMS and Nuxt.js.",
+  "sitename": "Tate Carson",
+  "sitedescription": "Composer and other things ",
   "siteicon": "/images/uploads/icon.png",
   "showmenu": true,
   "emailsignup": false,
   "altlayout": false,
-  "menu": [
-    {
-      "name": "Netlify",
-      "position": "3",
-      "link": "https://www.netlify.com/"
-    }
-  ]
+  "menu": []
 }
