@@ -1,20 +1,24 @@
 {
   "connectlinks": [
     {
-      "name": "Twitter",
-      "url": "https://twitter.com/jasperketone"
-    },
-    {
-      "name": "LinkedIn",
-      "url": "https://www.linkedin.com/in/jake-peterson-101/"
-    },
-    {
       "name": "Github",
-      "url": "https://github.com/jake-101"
+      "url": "https://github.com/tatecarson"
     },
     {
-      "name": "Unsplash",
-      "url": "https://unsplash.com/@jake101"
+      "name": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=XXFcT98AAAAJ&hl=en"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/tatecarson"
+    },
+    {
+      "name": "Keybase",
+      "url": "https://keybase.io/tatecarson"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:tatecarson@pm.me"
     }
   ]
 }
