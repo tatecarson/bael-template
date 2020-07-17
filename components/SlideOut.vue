@@ -15,7 +15,7 @@
         </nuxt-link>
       </li>
       <li class="zap-slideout-menu-item--small">
-        <nuxt-link to="/" exact>Home</nuxt-link>
+        <nuxt-link to="/" exact>Works</nuxt-link>
       </li>
          <li v-if="this.$store.state.allCats" class="zap-slideout-menu-item--small">
         <nuxt-link to="/categories" exact>Categories</nuxt-link>

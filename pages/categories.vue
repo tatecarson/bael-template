@@ -1,41 +1,44 @@
 <template>
-  <BaelGrid :allitems="allCategories"></BaelGrid>
+
+    <component :is="getLayout" :allitems="allBlogPosts"></component>
 </template>
 
 <script>
-import BaelGrid from '~/components/BaelGrid'
+import BaelGrid from "~/components/BaelGrid";
+import FullGrid from "~/components/FullGrid";
 export default {
     watchQuery: ['page'],
 
-   async asyncData({ params, app, payload, route, store }) {
- 
-    await store.commit("SET_TITLE", "Categories");
-
-  
-  },
-     transition (to, from) {
+   transition (to, from) {
+     
     if (!from) return 'fade'
     return +to.query.page > +from.query.page ? 'slide-right' : 'slide-left'
   },
-  components: {BaelGrid},
+  name: "Index",
+  components: { BaelGrid,FullGrid },
   data() {
     return {};
   },
-     head() {
-    return {
-      title: "Categories | " + this.$store.state.siteInfo.sitename
-    };
-  },
+  methods: {},
+
   computed: {
-   allCategories() {
-    return this.$store.state.allCats
-   }
-   
+    allBlogPosts() {
+      return this.$store.state.blogPosts;
+    },
+    getLayout() {
+if (this.$store.state.siteInfo.altlayout == false ) {
+  return 'BaelGrid'
+} else if (this.$store.state.siteInfo.altlayout == true ) {
+  return 'FullGrid'
+}
+
+    }
   }
 };
 </script>
 
 <style>
+
 .browse a {
   width: 100%;
 }
