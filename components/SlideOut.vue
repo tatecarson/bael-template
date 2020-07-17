@@ -16,10 +16,10 @@
       </li>
       <li class="zap-slideout-menu-item--small">
         <nuxt-link to="/" exact>Works</nuxt-link>
-      </li>
+      <!-- </li>
          <li v-if="this.$store.state.allCats" class="zap-slideout-menu-item--small">
         <nuxt-link to="/categories" exact>Categories</nuxt-link>
-      </li>
+      </li> -->
       <li v-if="myPages" v-for="(pg,i) in myPages" :key="`pg-${i}`" class="zap-slideout-menu-item--small">
         <nuxt-link :to="pg._path">{{pg.title}}</nuxt-link>
       </li>
