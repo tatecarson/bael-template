@@ -9,9 +9,9 @@
             <div class="xs-mt-5 bold">
             <ul class="list-unstyled xs-flex xs-flex-align-center">
              <li class="xs-inline-block xs-mr1" v-if="this.$store.state.theCategory"><div class="tag fill-gray-darker xs-border">
-  <nuxt-link :to="`/category/${this.$store.state.theCategory.toLowerCase()}`" class="tag__link text-white">{{this.$store.state.theCategory}}</nuxt-link>
+  <nuxt-link :to="`/category/${this.$store.state.theCategory.replace(/\s+/g, '-').toLowerCase()}`" class="tag__link text-white">{{this.$store.state.theCategory}}</nuxt-link>
 </div></li> 
-<li class="xs-inline-block">{{ date }}</li>
+<!-- <li class="xs-inline-block">{{ date }}</li> -->
               </ul> 
              </div>
           </no-ssr>

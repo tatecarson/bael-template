@@ -23,9 +23,9 @@
       <li v-if="myPages" v-for="(pg,i) in myPages" :key="`pg-${i}`" class="zap-slideout-menu-item--small">
         <nuxt-link :to="pg._path">{{pg.title}}</nuxt-link>
       </li>
-      <li v-if="menuLinks" class="xs-mt5 zap-slideout-menu-item black-font">
+      <!-- <li v-if="menuLinks" class="xs-mt5 zap-slideout-menu-item black-font">
         Links
-      </li>
+      </li> -->
       <li v-if="menuLinks" v-for="m in menuLinks" :key="m.position" class="zap-slideout-menu-item--small">
         <a :href="m.link">{{m.name}}</a>
       </li>

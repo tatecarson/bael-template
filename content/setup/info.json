@@ -2,7 +2,7 @@
   "sitename": "Tate Carson",
   "sitedescription": "Composer and other things ",
   "siteicon": "/images/uploads/icon.png",
-  "showmenu": true,
+  "showmenu": false,
   "emailsignup": false,
   "altlayout": false,
   "menu": []
