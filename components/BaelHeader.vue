@@ -91,6 +91,7 @@ export default {
   padding-left: 0;
   transform: translateY(17px);
   width: 30vw;
+  z-index: 100;
 }
 .results li {
   list-style-type: none;
