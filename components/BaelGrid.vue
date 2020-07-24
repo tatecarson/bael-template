@@ -1,11 +1,12 @@
 <template>
+  <no-ssr>
   <div class="xs-text-6 md-text-5">
     <div
       v-if="items2[0]"
       class="r full-height browse"
       :style="`height:calc(100vh - ${navbarheight}px);margin-top:${navbarheight}px`"
     >
-    <no-ssr>
+
       <div v-if="items2[pi]" v-for="(p,pi) in items2" :key="p.pi" class="xs-border xs-p2 bcg-item">
         <div class="item xs-block xs-full-height xs-flex">
           <nuxt-link
@@ -14,7 +15,7 @@
           >{{p.title}}</nuxt-link>
         </div>
       </div>
-      </no-ssr>
+
     </div>
     
     <div v-else class="r full-height browse">
@@ -26,6 +27,7 @@
       </div>
     </div>
   </div>
+  </no-ssr>
 </template>
 
 <script>
