@@ -28,6 +28,7 @@ export default {
   },
   computed: {
    allCategories() {
+    // console.log("state: ", this.$store.state.allCats)
     return this.$store.state.allCats
    }
    

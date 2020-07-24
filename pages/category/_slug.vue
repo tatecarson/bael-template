@@ -8,7 +8,6 @@ import BaelGrid from '~/components/BaelGrid'
 export default {
     async asyncData({ params, app, payload, route, store }) {
     let post = await import("~/content/categories/posts/" + params.slug + ".json");
-    console.log(post);
     await store.commit("SET_TITLE", post.title);
     await store.commit("SET_CRUMB", 'Categories');
     return post;

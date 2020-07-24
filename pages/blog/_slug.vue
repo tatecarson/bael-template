@@ -33,11 +33,10 @@ import MdWrapper from "~/components/MdWrapper";
 export default {
   async asyncData({ params, app, payload, route, store }) {
     let post = await import("~/content/blog/posts/" + params.slug + ".json");
-    console.log(post);
    
    await store.commit("SET_TITLE", post.title);
      await store.commit("SET_THUMB", post.thumbnail);
-     await store.commit("SET_CRUMB", 'Blog');
+     await store.commit("SET_CRUMB", 'Categories');
    await   store.commit("SET_POSTCAT", post.category);
     await store.commit("paginateOff", false);
     return post;

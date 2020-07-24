@@ -21,9 +21,6 @@
      <nuxt-link class="nobg-link" :to="p._path">
            {{p.title}}
           </nuxt-link>
-        
-
-    
         </div>
       </div>
 
@@ -61,6 +58,7 @@ export default {
         this.$store.commit("resultsLength", this.allitems.length);
       } else if (this.allitems.length < 12) {
         this.$store.commit("paginateOff", false);
+
       } else {
         this.$store.commit("paginateOff", false);
       }
@@ -77,6 +75,7 @@ export default {
             let api = this.allitems[this.count];
 
             this.items2.push(api);
+       
             this.count++;
           }
 
@@ -142,7 +141,9 @@ export default {
     total() {
       return this.allitems.length;
     },
-
+    allItems() {
+      return this.allitems;
+    },
     queryParam() {
       if (this.$route.query.page == null) {
         return 1;
